@@ -3,70 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kali McEuen | About and HTML</title>
+  <meta name="description" content="About Kali McEuen, her family, education, and track background.">
+  <title>Kali McEuen | About</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav aria-label="Primary navigation">
-    <a href="index.html">Home</a>
-    <a href="about.html">About & HTML</a>
-    <a href="goals.html">Goals & Positioning</a>
-  </nav>
-
-  <header>
-    <span class="badge">Chapters 20 & 21</span>
-    <h1>About Me and HTML Fundamentals</h1>
-    <p>Semantic elements, whitespace, links, images, lists, tables, and the CSS box model.</p>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">Kali McEuen</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="about.html">About</a></li>
+          <li><a href="goals.html">Goals</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="card split-layout">
-      <img class="profile-photo" src="assets/portrait.png" alt="Portrait of Kali with long blonde hair wearing a black shirt">
-      <div class="hero-copy">
-        <h2>My story</h2>
-        <p>My name is Kali McEuen. I grew up in Arizona and met my husband, Brayden, in high school through track. We have been married for two years. Today, we both run for BYU and compete in hurdle events.</p>
-        <p>I am entering my final year at BYU. I study business management and advisory through the Marriott School of Business.</p>
-      </div>
-    </section>
+  <main class="container section">
+    <div class="two-column">
+      <img class="profile-photo" src="headshot.png" alt="Portrait of Kali McEuen">
+      <section>
+        <p class="eyebrow">About Me</p>
+        <h1>My story so far</h1>
+        <p>I grew up in Arizona and met my husband, Brayden, while we were both running track in high school. We have been married for two years, and we now both run track at BYU. We also share the same event specialty: hurdles.</p>
+        <p>I am entering my final year at BYU, where I study business management and advisory in the Marriott School of Business. I enjoy learning how organizations, people, and good planning come together to create strong experiences.</p>
 
-    <section class="card">
-      <h2>HTML element examples</h2>
-      <table>
+        <div class="timeline">
+          <article>
+            <h2>Arizona beginnings</h2>
+            <p>Track was part of our lives before we began dating, and it is still something we get to share today.</p>
+          </article>
+          <article>
+            <h2>Life at BYU</h2>
+            <p>Balancing school, marriage, and athletics has helped me become organized and persistent.</p>
+          </article>
+          <article>
+            <h2>What I value</h2>
+            <ul>
+              <li>Family and strong relationships</li>
+              <li>Consistent work and personal growth</li>
+              <li>Creating memorable experiences for others</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <section class="section">
+      <h2>Quick facts</h2>
+      <table class="data-table">
         <thead>
-          <tr><th>Element</th><th>How it is used here</th><th>Example</th></tr>
+          <tr><th>Category</th><th>Details</th></tr>
         </thead>
         <tbody>
-          <tr><td><code>&lt;a&gt;</code></td><td>Links pages together</td><td><a href="index.html">Home page</a></td></tr>
-          <tr><td><code>&lt;img&gt;</code></td><td>Displays personal photographs</td><td>Portrait and track images</td></tr>
-          <tr><td><code>&lt;ul&gt;</code></td><td>Creates an unordered list</td><td>Quick facts</td></tr>
-          <tr><td><code>&lt;table&gt;</code></td><td>Organizes data into rows and columns</td><td>This table</td></tr>
+          <tr><td>Home state</td><td>Arizona</td></tr>
+          <tr><td>University</td><td>Brigham Young University</td></tr>
+          <tr><td>Sport</td><td>Track and Field — Hurdles</td></tr>
+          <tr><td>Major</td><td>Business Management / Advisory</td></tr>
+          <tr><td>Future interest</td><td>Wedding planning or venue ownership</td></tr>
         </tbody>
       </table>
-    </section>
-
-    <section class="card">
-      <h2>The CSS box model</h2>
-      <p>An element's real space includes content, padding, border, and margin.</p>
-      <div class="box-demo">
-        Content<br>
-        + 20px padding<br>
-        + 8px border<br>
-        + outside margin
-      </div>
-      <p class="small-note">The universal selector uses <code>box-sizing: border-box</code>, so padding and border are included in the declared width.</p>
-    </section>
-
-    <section class="card">
-      <h2>Whitespace and valid code</h2>
-      <pre><code>&lt;section&gt;
-  &lt;h2&gt;Readable HTML&lt;/h2&gt;
-  &lt;p&gt;Indentation and whitespace make code easier to check.&lt;/p&gt;
-&lt;/section&gt;</code></pre>
-      <p>HTML validators can identify missing tags, invalid nesting, and incorrect attributes.</p>
-      <p><a href="goals.html">Continue to my goals and positioning examples &rarr;</a></p>
+      <p class="small-note">Learn more about <a href="https://marriott.byu.edu/" target="_blank" rel="noopener">BYU Marriott School of Business</a>.</p>
     </section>
   </main>
 
-  <footer><p>Pages connected using relative file references</p></footer>
+  <footer><p>&copy; 2026 Kali McEuen • About Page</p></footer>
 </body>
 </html>
