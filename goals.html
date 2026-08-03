@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kali McEuen | Goals and Positioning</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav aria-label="Primary navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About & HTML</a>
+    <a href="goals.html">Goals & Positioning</a>
+  </nav>
+
+  <header>
+    <span class="badge">Chapter 22</span>
+    <h1>Track, Business Goals, and CSS Positioning</h1>
+    <p>Examples of sticky, relative, absolute, and floated positioning.</p>
+  </header>
+
+  <main>
+    <section class="card clearfix">
+      <img class="float-photo" src="assets/hurdles.png" alt="Kali clearing a hurdle during a nighttime track meet">
+      <h2>Track at BYU</h2>
+      <p>Track has played an important role in my life. It is how Brayden and I met, and it continues to be something we share at BYU. Both of us compete in hurdles.</p>
+      <p>The image is floated to the right, allowing the text to wrap around it. The section uses a clearfix so the surrounding card still contains the floated image.</p>
+    </section>
+
+    <section class="card">
+      <h2>My future goals</h2>
+      <div class="grid">
+        <article class="goal-card">
+          <h3>Wedding planning</h3>
+          <p>I would like to start a small business helping couples plan meaningful and organized weddings.</p>
+        </article>
+        <article class="goal-card">
+          <h3>Wedding venue</h3>
+          <p>One day, I would also love to own and operate a wedding venue.</p>
+        </article>
+        <article class="goal-card">
+          <h3>Business education</h3>
+          <p>I want to use the skills from BYU's Marriott School of Business to build and manage the company well.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Positioning example</h2>
+      <div class="position-stage">
+        <h3>Relative container</h3>
+        <p>This box remains in the normal page flow and acts as the reference point for the label.</p>
+        <div class="absolute-note">Absolutely positioned</div>
+      </div>
+      <p>The navigation bar uses <span class="highlight">sticky positioning</span> so it remains visible at the top while scrolling.</p>
+    </section>
+
+    <section class="card">
+      <h2>Practice contact form</h2>
+      <form action="#" method="get">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required>
+
+        <label for="interest">What are you interested in?</label>
+        <select id="interest" name="interest">
+          <option>Track and field</option>
+          <option>Business management</option>
+          <option>Wedding planning</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write a practice message"></textarea>
+
+        <label><input type="checkbox" name="updates" style="width:auto;"> Send updates</label>
+        <button type="submit">Submit Form</button>
+      </form>
+    </section>
+  </main>
+
+  <footer><p>End of Kali's three-page HTML and CSS project</p></footer>
+</body>
+</html>

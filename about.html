@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kali McEuen | About and HTML</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav aria-label="Primary navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About & HTML</a>
+    <a href="goals.html">Goals & Positioning</a>
+  </nav>
+
+  <header>
+    <span class="badge">Chapters 20 & 21</span>
+    <h1>About Me and HTML Fundamentals</h1>
+    <p>Semantic elements, whitespace, links, images, lists, tables, and the CSS box model.</p>
+  </header>
+
+  <main>
+    <section class="card split-layout">
+      <img class="profile-photo" src="assets/portrait.png" alt="Portrait of Kali with long blonde hair wearing a black shirt">
+      <div class="hero-copy">
+        <h2>My story</h2>
+        <p>My name is Kali McEuen. I grew up in Arizona and met my husband, Brayden, in high school through track. We have been married for two years. Today, we both run for BYU and compete in hurdle events.</p>
+        <p>I am entering my final year at BYU. I study business management and advisory through the Marriott School of Business.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>HTML element examples</h2>
+      <table>
+        <thead>
+          <tr><th>Element</th><th>How it is used here</th><th>Example</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>&lt;a&gt;</code></td><td>Links pages together</td><td><a href="index.html">Home page</a></td></tr>
+          <tr><td><code>&lt;img&gt;</code></td><td>Displays personal photographs</td><td>Portrait and track images</td></tr>
+          <tr><td><code>&lt;ul&gt;</code></td><td>Creates an unordered list</td><td>Quick facts</td></tr>
+          <tr><td><code>&lt;table&gt;</code></td><td>Organizes data into rows and columns</td><td>This table</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>The CSS box model</h2>
+      <p>An element's real space includes content, padding, border, and margin.</p>
+      <div class="box-demo">
+        Content<br>
+        + 20px padding<br>
+        + 8px border<br>
+        + outside margin
+      </div>
+      <p class="small-note">The universal selector uses <code>box-sizing: border-box</code>, so padding and border are included in the declared width.</p>
+    </section>
+
+    <section class="card">
+      <h2>Whitespace and valid code</h2>
+      <pre><code>&lt;section&gt;
+  &lt;h2&gt;Readable HTML&lt;/h2&gt;
+  &lt;p&gt;Indentation and whitespace make code easier to check.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+      <p>HTML validators can identify missing tags, invalid nesting, and incorrect attributes.</p>
+      <p><a href="goals.html">Continue to my goals and positioning examples &rarr;</a></p>
+    </section>
+  </main>
+
+  <footer><p>Pages connected using relative file references</p></footer>
+</body>
+</html>
